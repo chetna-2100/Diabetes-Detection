@@ -65,7 +65,19 @@ print('accuracy score of the test data : ', test_data_accuracy)
 
 #Making a predictive system
 
-input_data= (4,110,92,0,0,37,6,191)
+
+input_data = (
+     float(input("Pregnancies: ")),
+     float(input("Glucose: ")),
+     float(input("BloodPressure: ")),
+     float(input("SkinThickness: ")),
+     float(input("Insulin: ")),
+     float(input("BMI: ")),
+     float(input("DiabetesPedigreeFunction: ")),
+     float(input("Age: "))
+ )
+
+
 input_data_as_numpy_array= np.asarray(input_data)
 
 input_data_reshaped= input_data_as_numpy_array.reshape(1,-1)
